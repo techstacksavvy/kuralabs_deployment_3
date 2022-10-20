@@ -30,7 +30,6 @@ pipeline {
                 }
             }
         }
-    }
     
     stage ('Clean') {
         agent {
