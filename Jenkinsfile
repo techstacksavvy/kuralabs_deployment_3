@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage ('Build') {
             steps {
                 sh '''
                 #!/bin/bash
@@ -11,11 +11,11 @@ pipeline {
                 pip install - r requirements.txt
                 export FLASK_APP = application
                 flask run &
-                    '''
+                '''
               
             }
         }
-        stage('test') {
+        stage ('test') {
             steps {
                 sh '''
                 #!/bin/bash
@@ -31,7 +31,8 @@ pipeline {
             }
         }
     }
-    stage('Clean') {
+    
+    stage ('Clean') {
         agent {
             label 'awsDeploy'
         }
@@ -46,11 +47,11 @@ pipeline {
             kill $(cat pid.txt)
             exit 0
             fi
-                '''
+            '''
             
         }
     }
-    stage('Deploy') {
+    stage ('Deploy') {
         agent {
             label 'awsDeploy'
         }
