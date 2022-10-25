@@ -169,6 +169,6 @@ https://www.youtube.com/watch?v=lOdrdV0eDrs
 https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
 https://installati.one/ubuntu/22.04/python3.10-venv/
 
-Deployment 3 Diagram
+## Deployment 3 Diagram
 
- 
+ ![](templates/Deployment_3%20Architecture.drawio.png)
