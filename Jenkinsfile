@@ -33,7 +33,7 @@ pipeline {
         label 'agent02'
             }
             steps {
-            sh '''
+            sh '''#!/bin/bash
             npm install cypress
             npm install mocha
             npx cypress run --spec ./cypress/integration/test.spec.js
