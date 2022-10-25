@@ -129,9 +129,9 @@ Make sure you connect Jenkins to your GitHub Repo and then start your build!
        libgconf-2-4 libnss3 libxss1 libasound2 libxtst6   xauth xvfb -y
 ```
  
-![](templates/image%20(27)).png
+![](templates/image27.png)
  
-![](templates/image%20(26)).png
+![](templates/image26.png)
 
 
 ## Challenges
@@ -143,7 +143,7 @@ Also, I noticed I was using the wrong user and root directory in my Jenkins cred
  
 ![](templates/successfulbuild.png)
 
-![](templates/url%20shortener.png)
+![](templates/urlshortener.png)
 
 
 
@@ -152,12 +152,10 @@ Also, I noticed I was using the wrong user and root directory in my Jenkins cred
 Another challenge I encountered was getting my Cypress test to pass. According to the logs from the console output my Cypress configuration file could not be located in the /home/ubuntu/agent02/Workspace folder.
 
  
-![](templates/image%20(29)).png
+![](templates/image29.png)
 
-![](templates/image%20(28)).png
+![](templates/image28.png)
  
-
-
 
 ## Additional Tools and Tutorials You May Find Useful 
 https://www.youtube.com/watch?v=RkaqRsockfg
