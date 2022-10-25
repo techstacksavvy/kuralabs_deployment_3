@@ -13,7 +13,7 @@
 		- nginx
 ## Configure and connect a Jenkins agent to Jenkins server
 
-
+![](templates/node1.png)
 
 ###### Access the UI of the Jenkins server EC2 (i.e. public_ip:8080) and select the Build Executor status in the bottom left corner of the menu.
 Now enter the configurations below:
@@ -129,12 +129,9 @@ Make sure you connect Jenkins to your GitHub Repo and then start your build!
        libgconf-2-4 libnss3 libxss1 libasound2 libxtst6   xauth xvfb -y
 ```
  
-
+![](templates/image%20(27)).png
  
-
-
-
-
+![](templates/image%20(26)).png
 
 
 ## Challenges
@@ -144,12 +141,9 @@ When trying to establish a connection between my Jenkins server and agent nodes 
 Also, I noticed I was using the wrong user and root directory in my Jenkins credentials set-up. I entered “jenkins” and “/home/jenkins” in the username and root directory fields instead of “ubuntu” and “home/ubuntu/agent”. 
 
  
+![](templates/successfulbuild.png)
 
-
-
-
-
-
+![](templates/url%20shortener.png)
 
 
 
@@ -158,7 +152,9 @@ Also, I noticed I was using the wrong user and root directory in my Jenkins cred
 Another challenge I encountered was getting my Cypress test to pass. According to the logs from the console output my Cypress configuration file could not be located in the /home/ubuntu/agent02/Workspace folder.
 
  
+![](templates/image%20(29)).png
 
+![](templates/image%20(28)).png
  
 
 
