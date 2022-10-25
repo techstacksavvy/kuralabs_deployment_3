@@ -28,6 +28,23 @@ pipeline {
                 }
             }
         }
+        stage ('test2') {
+        agent {
+        label 'agent02'
+            }
+            steps {
+            sh '''
+            npm install cypress
+            npm install mocha
+            npx cypress run --spec ./cypress/integration/test.spec.js
+            '''
+        }
+        post {
+                always {
+                    junit 'cypress_test-reports/cypress-results.xml'
+                }
+            }
+        }
     
     stage ('Clean') {
         agent {
